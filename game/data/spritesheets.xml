@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<spritesheets>
+  <spritesheet name="background" src="game/assets/images/background.png">
+
+    <states>
+      <state name="moving">
+        <layer name="moving"></layer>
+      </state>
+      <state name="idle">
+        <layer name="idle"></layer>
+      </state>
+    </states>
+
+    <layers>
+      <layer name="moving" x="-(t/10%800)" y="0">
+        <frame name="idle"></frame>
+      </layer>
+      <layer name="idle" x="0" y="0">
+        <frame name="idle"></frame>
+      </layer>
+    </layers>
+
+    <frames>
+      <frame name="idle" x="0" y="0" w="1600" h="400" t="0"></frame>
+
+    </frames>
+
+  </spritesheet>
+  
+    <spritesheet name="debugRect" >
+    <states>
+      <state name="normal">
+        <layer name="Idle1"></layer>
+      </state>
+    </states>
+    <layers>
+      <layer name="Idle1" x="0" y="0">
+        <frame name="Rect"></frame>
+      </layer>
+    </layers>
+    <frames>
+      <frame name="Rect" code="context.fillStyle='blue'; context.globalAlpha=0.5; context.fillRect(x,y,vars['$w'],vars['$h']);" t="0"></frame>
+    </frames>
+  </spritesheet>
+
+  <spritesheet name="bg1" src="game/assets/images/bigbg.png">
+    <states>
+      <state name="idle">
+        <layer name="idle"></layer>
+      </state>
+    </states>
+
+    <layers>
+      <layer name="idle" x="0" y="0">
+        <frame name="idle"></frame>
+      </layer>
+    </layers>
+    <frames>
+      <frame name="idle" x="0" y="0" w="5760" h="2160" t="0"></frame>
+    </frames>
+  </spritesheet>
+  <spritesheet name="bg1sky" src="game/assets/images/bigbg-sky.png">
+    <states>
+      <state name="idle">
+        <layer name="idle"></layer>
+      </state>
+    </states>
+    <layers>
+      <layer name="idle" x="0" y="0">
+        <frame name="idle"></frame>
+      </layer>
+    </layers>
+    <frames>
+      <frame name="idle" x="0" y="0" w="5760" h="2160" t="0"></frame>
+    </frames>
+  </spritesheet>
+  <spritesheet name="bg1stars" src="game/assets/images/bigbg-stars.png">
+    <states>
+      <state name="idle">
+        <layer name="idle"></layer>
+      </state>
+    </states>
+    <layers>
+      <layer name="idle" x="0" y="0">
+        <frame name="idle"></frame>
+      </layer>
+    </layers>
+    <frames>
+      <frame name="idle" x="0" y="0" w="5760" h="2160" t="0"></frame>
+    </frames>
+  </spritesheet>
+
+  <spritesheet name="tiledPattern">
+    <states>
+      <state name="tiles">
+        <layer name="tiles"></layer>
+      </state>
+    </states>
+    <layers>
+      <layer name="tiles" x="0" y="0">
+        <frame name="tiles"></frame>
+      </layer>
+    </layers>
+    <frames>
+      <frame name="tiles" code="if(vars['$pattern']){context.drawImage(vars['$pattern'],x,y);}" t="0"></frame>
+    </frames>
+  </spritesheet>
+
+  <spritesheet name="pipe" src="game/assets/images/pipe.png">
+
+    <states>
+      <state name="normal">
+        <layer name="Idle1"></layer>
+      </state>
+      <state name="reverse" flip="v">
+        <layer name="Idle1"></layer>
+      </state>
+    </states>
+
+    <layers>
+      <layer name="Idle1" x="0" y="0">
+        <frame name="I1"></frame>
+      </layer>
+    </layers>
+
+    <frames>
+      <frame name="I1" x="0" y="0" w="100" h="300" t="0"></frame>
+
+    </frames>
+
+  </spritesheet>
+
+  <spritesheet name="button" src="game/assets/images/button.png">
+
+    <states>
+      <state name="normal">
+        <layer name="Idle1"></layer>
+      </state>
+    </states>
+
+    <layers>
+      <layer name="Idle1" x="0" y="0">
+        <frame name="I1"></frame>
+      </layer>
+    </layers>
+
+    <frames>
+      <frame name="I1" x="0" y="0" w="200" h="100" t="0"></frame>
+
+    </frames>
+
+  </spritesheet>
+
+  <spritesheet name="text" >
+
+    <states>
+      <state name="normal">
+        <layer name="Idle1"></layer>
+      </state>
+    </states>
+
+    <layers>
+      <layer name="Idle1" x="0" y="0">
+        <frame name="Text"></frame>
+      </layer>
+    </layers>
+
+    <frames>
+      <frame name="Text" code="context.textBaseline ='top';context.textAlign='start';context.font='20pt Verdana';context.fillStyle = vars['$color'];context.fillText(vars['$text'],x,y);" t="0"></frame>
+    </frames>
+      </spritesheet>
+  
+    <spritesheet name="flyingText" >
+
+    <states>
+      <state name="normal">
+        <layer name="n1"></layer>
+      </state>
+    </states>
+
+    <layers>
+      <layer name="n1" x="t/30" y="-Math.floor(t/30)+Math.sin(t/70)*10">
+        <frame name="Text"></frame>
+      </layer>
+    </layers>
+
+    <frames>
+      <frame name="Text" code="context.globalAlpha=vars['$timer']/100; context.textBaseline ='top';context.textAlign='start';context.font='20pt Verdana';
+    context.fillStyle = vars['$color'];context.fillText(vars['$text'],x,y);" t="0"></frame>
+    </frames>
+  </spritesheet>
+
+  <spritesheet name="blood" >
+
+    <states>
+      <state name="normal">
+        <layer name="n1"></layer>
+      </state>
+    </states>
+
+    <layers>
+      <layer name="n1" x="0" y="0">
+        <frame name="Blood"></frame>
+      </layer>
+    </layers>
+
+    <frames>
+      <frame name="Blood" code="
+             context.globalAlpha=vars['$timer']/100; context.beginPath(); context.arc(x, y, rand(1,5), 0, 2 * Math.PI, false);context.fillStyle='darkred';context.fill();
+             context.globalAlpha=vars['$timer']/100; context.beginPath(); context.arc(x, y, rand(1,5), 0, 2 * Math.PI, false);context.fillStyle='maroon';context.fill();
+             " t="0"></frame>
+    </frames>
+  </spritesheet>
+
+  <spritesheet name="bubble" >
+    <states>
+      <state name="normal">
+        <layer name="n1"></layer>
+      </state>
+    </states>
+
+    <layers>
+      <layer name="n1" x="0" y="0">
+        <frame name="Bubble"></frame>
+      </layer>
+    </layers>
+
+    <frames>
+      <frame name="Bubble" code="
+             context.globalAlpha=vars['$timer']/100; context.beginPath(); context.arc(x, y, rand(1,5), 0, 2 * Math.PI, false);context.fillStyle='white';context.fill();
+             context.globalAlpha=vars['$timer']/100; context.beginPath(); context.arc(x, y, rand(1,5), 0, 2 * Math.PI, false);context.fillStyle='lightBlue';context.fill();
+             " t="0"></frame>
+    </frames>
+  </spritesheet>
+
+  <spritesheet name="splash" >
+    <states>
+      <state name="normal">
+        <layer name="n1"></layer>
+      </state>
+    </states>
+
+    <layers>
+      <layer name="n1" x="0" y="0">
+        <frame name="Splash"></frame>
+      </layer>
+    </layers>
+
+    <frames>
+      <frame name="Splash" code="
+             context.globalAlpha=vars['$timer']/100; context.beginPath(); context.arc(x, y, 20, 0, 2 * Math.PI, false);context.fillStyle='white';context.fill();
+             " t="0"></frame>
+    </frames>
+  </spritesheet>
+  
+  <spritesheet name="bar" >
+    <states>
+      <state name="normal">
+        <layer name="normal1"></layer>
+        <layer name="name"></layer>
+      </state>
+    </states>
+    <layers>
+      <layer name="normal1" x="0" y="0">
+        <frame name="Init"></frame>
+        <frame name="Rect"></frame>
+      </layer>
+      <layer name="name" x="10" y="-40">
+        <frame name="n1"></frame>
+      </layer>
+    </layers>
+    <frames>
+      <frame name="Init" code="
+             var img1 = new Image(); img1.src='game/assets/images/interface/barBottom.png'; var pattern1=context.createPattern(img1,'repeat');vars['pattern1']=pattern1;context.fillStyle=pattern1;context.save(); context.translate(x, y); context.fillRect(0, 0, vars['$maxFill'],vars['$h']);context.restore();
+             context.fillStyle=vars['$color']; context.fillRect(x,y,vars['$filled'],vars['$h']);
+             var img2 = new Image(); img2.src='game/assets/images/interface/barTop.png'; var pattern2=context.createPattern(img2,'repeat');vars['pattern2']=pattern2;context.fillStyle=pattern2;context.save(); context.translate(x, y); context.fillRect(0, 0, vars['$maxFill'],vars['$h']);context.restore();
+             " t="0"></frame>
+
+      <frame name="Rect" code="
+             context.fillStyle=vars['pattern1'];context.save(); context.translate(x, y); context.fillRect(0, 0, vars['$maxFill'],vars['$h']);context.restore();
+             context.fillStyle=vars['$color']; context.fillRect(x,y,vars['$filled'],vars['$h']);
+             context.fillStyle=vars['pattern2'];context.save(); context.translate(x, y); context.fillRect(0, 0, vars['$maxFill'],vars['$h'] );context.restore();
+             " t="0"></frame>
+      <frame name="n1" code="context.textBaseline ='top';context.textAlign='start';context.font='20pt Verdana';context.fillStyle = 'black';context.fillText(vars['$name'],x,y);" t="0"></frame>
+    </frames>
+  </spritesheet>
+  
+  <spritesheet name="O2orb" src="game/assets/images/interface/oxygenOrb.png">
+    <states>
+      <state name="normal">
+        <layer name="bottom"></layer>
+        <layer name="fill"></layer>
+        <layer name="top"></layer>
+      </state>
+    </states>
+    <layers>
+      <layer name="bottom" x="0" y="0">
+        <frame name="bottom1"></frame>
+      </layer>
+      <layer name="fill" x="0" y="0">
+        <frame name="fill1"></frame>
+      </layer>
+      <layer name="top" x="0" y="0">
+        <frame name="top1"></frame>
+      </layer>
+    </layers>
+    <frames>
+      <frame name="bottom1" x="0" y="0" w="50" h="50" t="0"></frame>
+      <frame name="fill1" code="context.fillStyle='skyBlue'; context.beginPath(); context.arc(x+25, y+25, vars['$filled'], 0, 2 * Math.PI, false);context.fill();" t="0"></frame>
+      <frame name="top1" x="50" y="0" w="50" h="50" t="0"></frame>
+    </frames>
+  </spritesheet>
+
+  <!--Character Icons-->
+  <!-- TODO: Different states for icon-->
+  <spritesheet name="charaIconEssie" src="game/assets/images/characterIconMockup.png">
+    <states>
+      <state name="Normal">
+        <layer name="normal1"></layer>
+      </state>
+    </states>
+    <layers>
+      <layer name="normal1" x="0" y="0">
+        <frame name="n1"></frame>
+      </layer>
+    </layers>
+    <frames>
+      <frame name="n1" x="0" y="0" w="100" h="100" t="0"></frame>
+    </frames>
+  </spritesheet>
+  
+  <spritesheet name="charaIconKey" src="game/assets/images/characterIconMockup2.png">
+    <states>
+      <state name="Normal">
+        <layer name="normal1"></layer>
+      </state>
+    </states>
+    <layers>
+      <layer name="normal1" x="0" y="0">
+        <frame name="n1"></frame>
+      </layer>
+    </layers>
+    <frames>
+      <frame name="n1" x="0" y="0" w="100" h="100" t="0"></frame>
+    </frames>
+  </spritesheet>
+  
+<!-- CHARACTERS-->
+  <spritesheet name="paradog" src="game/assets/images/paradog_small.png">
+
+    <states>
+      <state name="IdleL">
+        <layer name="Idle1"></layer>
+      </state>
+      <state name="IdleR" flip="h">
+        <layer name="Idle1"></layer>
+      </state>
+      <state name="RunL">
+        <layer name="Run1"></layer>
+      </state>
+      <state name="RunR" flip="h">
+        <layer name="Run1"></layer>
+      </state>
+      <state name="SeeUL">
+        <layer name="SeeU1"></layer>
+      </state>
+      <state name="SeeUR" flip="h">
+        <layer name="SeeU1"></layer>
+      </state>
+      <state name="BarkL">
+        <layer name="Bark1"></layer>
+      </state>
+      <state name="BarkR" flip="h">
+        <layer name="Bark1"></layer>
+      </state>
+      <state name="ScareL">
+        <layer name="Scare1"></layer>
+      </state>
+      <state name="ScareR" flip="h">
+        <layer name="Scare1"></layer>
+      </state>
+    </states>
+
+    <layers>
+      <layer name="Idle1" x="0" y="0">
+        <frame name="I1"></frame>
+        <frame name="I2"></frame>
+        <frame name="I3"></frame>
+        <frame name="I4"></frame>
+        <frame name="I5"></frame>
+        <frame name="I6"></frame>
+      </layer>
+      <layer name="Run1" x="0" y="0">
+        <frame name="R1"></frame>
+        <frame name="R2"></frame>
+        <frame name="R3"></frame>
+        <frame name="R4"></frame>
+        <frame name="R5"></frame>
+        <frame name="R6"></frame>
+      </layer>
+      <layer name="SeeU1" x="0" y="0">
+        <frame name="S1"></frame>
+        <frame name="S2"></frame>
+        <frame name="S3"></frame>
+      </layer>
+      <layer name="Bark1" x="0" y="0">
+        <frame name="B1"></frame>
+        <frame name="B2"></frame>
+        <frame name="B3"></frame>
+        <frame name="B4"></frame>
+      </layer>
+      <layer name="Scare1" x="0" y="0">
+        <frame name="O1"></frame>
+        <frame name="O2"></frame>
+        <frame name="O3"></frame>
+        <frame name="O4"></frame>
+        <frame name="O5"></frame>
+      </layer>
+    </layers>
+
+    <frames>
+      <frame name="I1" x="0" y="0" w="59" h="57" t="100"></frame>
+      <frame name="I2" x="59" y="0" w="59" h="57" t="100"></frame>
+      <frame name="I3" x="117" y="0" w="59" h="57" t="100"></frame>
+      <frame name="I4" x="175" y="0" w="59" h="57" t="100"></frame>
+      <frame name="I5" x="234" y="0" w="59" h="57" t="100"></frame>
+      <frame name="I6" x="292" y="0" w="59" h="57" t="100"></frame>
+
+      <frame name="R1" x="0" y="177" w="59" h="57" t="100"></frame>
+      <frame name="R2" x="59" y="177" w="59" h="57" t="100"></frame>
+      <frame name="R3" x="117" y="177" w="59" h="57" t="100"></frame>
+      <frame name="R4" x="175" y="177" w="59" h="57" t="100"></frame>
+      <frame name="R5" x="234" y="177" w="59" h="57" t="100"></frame>
+      <frame name="R6" x="292" y="177" w="59" h="57" t="100"></frame>
+
+      <frame name="S1" x="0" y="59" w="59" h="57" t="100"></frame>
+      <frame name="S2" x="59" y="59" w="59" h="57" t="500"></frame>
+      <frame name="S3" x="117" y="59" w="59" h="57" t="100"></frame>
+
+      <frame name="B1" x="0" y="236" w="59" h="57" t="100"></frame>
+      <frame name="B2" x="59" y="236" w="59" h="57" t="100"></frame>
+      <frame name="B3" x="117" y="236" w="59" h="57" t="100"></frame>
+      <frame name="B4" x="175" y="236" w="59" h="57" t="100"></frame>
+
+      <frame name="O1" x="0" y="118" w="59" h="57" t="100"></frame>
+      <frame name="O2" x="59" y="118" w="59" h="57" t="100"></frame>
+      <frame name="O3" x="117" y="118" w="59" h="57" t="100"></frame>
+      <frame name="O4" x="175" y="118" w="59" h="57" t="0"></frame>
+      <frame name="O5" x="234" y="118" w="59" h="57" t="0"></frame>
+
+    </frames>
+
+  </spritesheet>
+
+  <spritesheet name="mockupEssie" src="game/assets/images/mockupEssie.png">
+
+    <states>
+      <state name="IdleR">
+        <layer name="Idle1"></layer>
+      </state>
+      <state name="IdleL" flip="h">
+        <layer name="Idle1"></layer>
+      </state>
+      <state name="RunR">
+        <layer name="Run1"></layer>
+      </state>
+      <state name="RunL" flip="h">
+        <layer name="Run1"></layer>
+      </state>
+      <state name="JumpR">
+        <layer name="Jump1"></layer>
+      </state>
+      <state name="JumpL" flip="h">
+        <layer name="Jump1"></layer>
+      </state>
+      <state name="FallR">
+        <layer name="Fall1"></layer>
+      </state>
+      <state name="FallL" flip="h">
+        <layer name="Fall1"></layer>
+      </state>
+      <state name="CrouchR">
+        <layer name="Crouch1"></layer>
+      </state>
+      <state name="CrouchL" flip="h">
+        <layer name="Crouch1"></layer>
+      </state>
+      <state name="HurtR">
+        <layer name="Hurt1"></layer>
+      </state>
+      <state name="HurtL" flip="h">
+        <layer name="Hurt1"></layer>
+      </state>
+      <state name="UppercutR">
+        <layer name="Uppercut1"></layer>
+      </state>
+      <state name="UppercutL" flip="h">
+        <layer name="Uppercut1"></layer>
+      </state>
+      <state name="SlideR">
+        <layer name="Slide1"></layer>
+      </state>
+      <state name="SlideL" flip="h">
+        <layer name="Slide1"></layer>
+      </state>
+      <state name="Light1R">
+        <layer name="Light11"></layer>
+      </state>
+      <state name="Light1L" flip="h">
+        <layer name="Light11"></layer>
+      </state>
+      <state name="Light2R">
+        <layer name="Light21"></layer>
+      </state>
+      <state name="Light2L" flip="h">
+        <layer name="Light21"></layer>
+      </state>
+      <state name="Light3R">
+        <layer name="Light31"></layer>
+      </state>
+      <state name="Light3L" flip="h">
+        <layer name="Light31"></layer>
+      </state>
+    </states>
+
+    <layers>
+      <layer name="Idle1" x="0" y="0">
+        <frame name="I1"></frame>
+        <frame name="I2"></frame>
+      </layer>
+      <layer name="Run1" x="0" y="0">
+        <frame name="R1"></frame>
+        <frame name="R2"></frame>
+        <frame name="R3"></frame>
+        <frame name="R4"></frame>
+      </layer>
+      <layer name="Jump1" x="0" y="0">
+        <frame name="J1"></frame>
+      </layer>
+      <layer name="Fall1" x="0" y="0">
+        <frame name="F1"></frame>
+      </layer>
+      <layer name="Crouch1" x="0" y="0">
+        <frame name="C1"></frame>
+      </layer>
+      <layer name="Hurt1" x="0" y="0">
+        <frame name="H1"></frame>
+      </layer>
+      <layer name="Uppercut1" x="0" y="0">
+        <frame name="U1"></frame>
+      </layer>
+      <layer name="Slide1" x="0" y="0">
+        <frame name="S1"></frame>
+      </layer>
+      <layer name="Light11" x="0" y="0">
+        <frame name="L1"></frame>
+      </layer>
+      <layer name="Light21" x="0" y="0">
+        <frame name="L2"></frame>
+      </layer>
+      <layer name="Light31" x="0" y="0">
+        <frame name="L3"></frame>
+      </layer>
+    </layers>
+
+    <frames>
+      <frame name="I1" x="0" y="0" w="175" h="200" t="500"></frame>
+      <frame name="I2" x="175" y="0" w="175" h="200" t="100"></frame>
+
+      <frame name="R1" x="0" y="200" w="175" h="200" t="100"></frame>
+      <frame name="R2" x="175" y="200" w="175" h="200" t="100"></frame>
+      <frame name="R3" x="350" y="200" w="175" h="200" t="100"></frame>
+      <frame name="R4" x="525" y="200" w="175" h="200" t="100"></frame>
+
+      <frame name="J1" x="0" y="400" w="175" h="200" t="100"></frame>
+      <frame name="F1" x="175" y="400" w="175" h="200" t="100"></frame>
+
+      <frame name="C1" x="0" y="600" w="175" h="200" t="100"></frame>
+      <frame name="H1" x="175" y="600" w="175" h="200" t="100"></frame>
+
+      <frame name="U1" x="0" y="800" w="175" h="200" t="100"></frame>
+      <frame name="S1" x="175" y="800" w="175" h="200" t="100"></frame>
+
+      <frame name="L1" x="0" y="1000" w="175" h="200" t="100"></frame>
+      <frame name="L2" x="175" y="1000" w="175" h="200" t="100"></frame>
+      <frame name="L3" x="350" y="1000" w="175" h="200" t="100"></frame>
+
+
+    </frames>
+
+  </spritesheet>
+  <spritesheet name="mockupKey" src="game/assets/images/mockupKey.png">
+
+    <states>
+      <state name="IdleL">
+        <layer name="Idle1"></layer>
+      </state>
+      <state name="IdleR" flip="h">
+        <layer name="Idle1"></layer>
+      </state>
+      <state name="RunL">
+        <layer name="Run1"></layer>
+      </state>
+      <state name="RunR" flip="h">
+        <layer name="Run1"></layer>
+      </state>
+      <state name="JumpL">
+        <layer name="Jump1"></layer>
+      </state>
+      <state name="JumpR" flip="h">
+        <layer name="Jump1"></layer>
+      </state>
+      <state name="FallL">
+        <layer name="Fall1"></layer>
+      </state>
+      <state name="FallR" flip="h">
+        <layer name="Fall1"></layer>
+      </state>
+      <state name="CrouchL">
+        <layer name="Crouch1"></layer>
+      </state>
+      <state name="CrouchR" flip="h">
+        <layer name="Crouch1"></layer>
+      </state>
+      <state name="HurtL">
+        <layer name="Hurt1"></layer>
+      </state>
+      <state name="HurtR" flip="h">
+        <layer name="Hurt1"></layer>
+      </state>
+      <state name="UppercutL">
+        <layer name="Uppercut1"></layer>
+      </state>
+      <state name="UppercutR" flip="h">
+        <layer name="Uppercut1"></layer>
+      </state>
+      <state name="SlideL">
+        <layer name="Slide1"></layer>
+      </state>
+      <state name="SlideR" flip="h">
+        <layer name="Slide1"></layer>
+      </state>
+      <state name="Light1L">
+        <layer name="Light11"></layer>
+      </state>
+      <state name="Light1R" flip="h">
+        <layer name="Light11"></layer>
+      </state>
+      <state name="Light2L">
+        <layer name="Light21"></layer>
+      </state>
+      <state name="Light2R" flip="h">
+        <layer name="Light21"></layer>
+      </state>
+      <state name="Light3L">
+        <layer name="Light31"></layer>
+      </state>
+      <state name="Light3R" flip="h">
+        <layer name="Light31"></layer>
+      </state>
+    </states>
+
+    <layers>
+      <layer name="Idle1" x="0" y="0">
+        <frame name="I1"></frame>
+        <frame name="I2"></frame>
+      </layer>
+      <layer name="Run1" x="0" y="0">
+        <frame name="R1"></frame>
+        <!--<frame name="R2"></frame>
+        <frame name="R3"></frame>
+        <frame name="R4"></frame>-->
+      </layer>
+      <layer name="Jump1" x="0" y="0">
+        <frame name="J1"></frame>
+      </layer>
+      <layer name="Fall1" x="0" y="0">
+        <frame name="F1"></frame>
+      </layer>
+      <layer name="Crouch1" x="0" y="0">
+        <frame name="C1"></frame>
+      </layer>
+      <layer name="Hurt1" x="0" y="0">
+        <frame name="H1"></frame>
+      </layer>
+      <layer name="Uppercut1" x="0" y="0">
+        <frame name="U1"></frame>
+      </layer>
+      <layer name="Slide1" x="0" y="0">
+        <frame name="S1"></frame>
+      </layer>
+      <layer name="Light11" x="0" y="0">
+        <frame name="L1"></frame>
+      </layer>
+      <layer name="Light21" x="0" y="0">
+        <frame name="L2"></frame>
+      </layer>
+      <layer name="Light31" x="0" y="0">
+        <frame name="L3"></frame>
+      </layer>
+    </layers>
+
+    <frames>
+      <frame name="I1" x="0" y="0" w="175" h="200" t="500"></frame>
+      <frame name="I2" x="175" y="0" w="175" h="200" t="100"></frame>
+
+      <frame name="R1" x="0" y="200" w="175" h="200" t="100"></frame>
+      <frame name="R2" x="175" y="200" w="175" h="200" t="100"></frame>
+      <frame name="R3" x="350" y="200" w="175" h="200" t="100"></frame>
+      <frame name="R4" x="525" y="200" w="175" h="200" t="100"></frame>
+
+      <frame name="J1" x="0" y="400" w="175" h="200" t="100"></frame>
+      <frame name="F1" x="175" y="400" w="175" h="200" t="100"></frame>
+
+      <frame name="C1" x="0" y="600" w="175" h="200" t="100"></frame>
+      <frame name="H1" x="175" y="600" w="175" h="200" t="100"></frame>
+
+      <frame name="U1" x="0" y="800" w="175" h="200" t="100"></frame>
+      <frame name="S1" x="175" y="800" w="175" h="200" t="100"></frame>
+
+      <frame name="L1" x="0" y="1000" w="175" h="200" t="100"></frame>
+      <frame name="L2" x="175" y="1000" w="175" h="200" t="100"></frame>
+      <frame name="L3" x="350" y="1000" w="175" h="200" t="100"></frame>
+
+    </frames>
+  </spritesheet>
+
+  <spritesheet name="tiledPattern">
+    <states>
+      <state name="tiles">
+        <layer name="tiles"></layer>
+      </state>
+    </states>
+    <layers>
+      <layer name="tiles" x="0" y="0">
+        <frame name="tiles"></frame>
+      </layer>
+    </layers>
+    <frames>
+      <frame name="tiles" code="if(vars['$pattern']){context.drawImage(vars['$pattern'],x,y);}" t="0"></frame>
+    </frames>
+  </spritesheet>
+  
+  <spritesheet name="tint" >
+    <states>
+      <state name="normal">
+        <layer name="Idle1"></layer>
+      </state>
+    </states>
+    <layers>
+      <layer name="Idle1" x="0" y="0">
+        <frame name="Rect"></frame>
+      </layer>
+    </layers>
+    <frames>
+      <frame name="Rect" code="context.fillStyle=vars['$color']; context.globalAlpha=vars['$opacity']; context.fillRect(x,y,vars['$w'],vars['$h']);" t="0"></frame>
+    </frames>
+  </spritesheet>
+
+</spritesheets>

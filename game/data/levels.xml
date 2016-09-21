@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<levels>
+  <!--<level id="game1">
+    <object name="mystorage" type="storage" x="0" y="0" ></object>
+    <object name="camera" type="cam" x="0" y="0" vars='{"player":"Essie"}'></object>
+    <object name="keyboard" type="keyboard" x="0" y="0" ></object>
+    <object name="notificationManager" type="notificationManager" x="0" y="0" ></object>
+
+    
+    <object name="someBG" type="bg1" x="0" y="0" ></object>
+    
+    <object name="Essie" type="Essie" x="200" y="800" vars='{"focus": true, "nextAlly":"Keystroke"}'></object>
+    <object name="Keystroke" type="Key" x="1500" y="200" vars='{"focus": false, "nextAlly":"Essie"}'></object>
+    <object name="EssieDummy" type="dummy" x="500" y="200" vars='{"focus": false}'></object>
+    
+    <object name="someMouse" type="basicMouse" x="0" y="0" ></object>
+    <object name="someScore" type="score" x="600" y="50" ></object>
+    <object name="maxScore" type="maxscore" x="600" y="100" ></object>
+
+<object name='floor' type='floor' x='0' y='0' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='1900' y='0' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='0' y='100' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='1900' y='100' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='0' y='200' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='1900' y='200' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='0' y='300' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='1900' y='300' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='0' y='400' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='1900' y='400' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='0' y='500' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='1900' y='500' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='0' y='600' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='1900' y='600' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='0' y='700' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='1900' y='700' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='0' y='800' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='1900' y='800' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='0' y='900' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='1900' y='900' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='0' y='1000' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='1900' y='1000' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='0' y='1100' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='1900' y='1100' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='0' y='1200' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='1900' y='1200' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='0' y='1300' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='1900' y='1300' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='0' y='1400' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='1000' y='1400' vars='{"w":200, "h":100}'></object>
+<object name='deepWater' type='deepWater' x='1200' y='1400' vars='{"w":400, "h":100}'></object>
+<object name='floor' type='floor' x='1600' y='1400' vars='{"w":200, "h":100}'></object>
+<object name='floor' type='floor' x='1900' y='1400' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='0' y='1500' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='1000' y='1500' vars='{"w":200, "h":100}'></object>
+<object name='deepWater' type='deepWater' x='1200' y='1500' vars='{"w":400, "h":100}'></object>
+<object name='floor' type='floor' x='1600' y='1500' vars='{"w":200, "h":100}'></object>
+<object name='floor' type='floor' x='1900' y='1500' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='0' y='1600' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='1000' y='1600' vars='{"w":200, "h":100}'></object>
+<object name='deepWater' type='deepWater' x='1200' y='1600' vars='{"w":200, "h":100}'></object>
+<object name='floor' type='floor' x='1400' y='1600' vars='{"w":400, "h":100}'></object>
+<object name='floor' type='floor' x='1900' y='1600' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='0' y='1700' vars='{"w":100, "h":100}'></object>
+<object name='floor' type='floor' x='800' y='1700' vars='{"w":1200, "h":100}'></object>
+<object name='floor' type='floor' x='0' y='1800' vars='{"w":2000, "h":100}'></object>
+<object name='floor' type='floor' x='0' y='1900' vars='{"w":2000, "h":100}'></object>
+
+
+<object name='floorSkin' type='floorSkin' x='0' y='0' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1900' y='0' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='100' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1900' y='100' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='200' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1900' y='200' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='300' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1900' y='300' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='400' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1900' y='400' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='500' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1900' y='500' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='600' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1900' y='600' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='700' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1900' y='700' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='800' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1900' y='800' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='900' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1900' y='900' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='1000' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1900' y='1000' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='1100' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1900' y='1100' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='1200' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1900' y='1200' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='1300' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1900' y='1300' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='1400' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1000' y='1400' vars='{"w":200, "h":100, "img": "grass0"}'></object>
+<object name='deepWaterSkin' type='deepWaterSkin' x='1200' y='1400' vars='{"w":400, "h":100, "img": "deepwater0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1600' y='1400' vars='{"w":200, "h":100, "img": "grass0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1900' y='1400' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='1500' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1000' y='1500' vars='{"w":200, "h":100, "img": "dirt0"}'></object>
+<object name='deepWaterSkin' type='deepWaterSkin' x='1200' y='1500' vars='{"w":400, "h":100, "img": "deepwater0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1600' y='1500' vars='{"w":200, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1900' y='1500' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='1600' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1000' y='1600' vars='{"w":200, "h":100, "img": "dirt0"}'></object>
+<object name='deepWaterSkin' type='deepWaterSkin' x='1200' y='1600' vars='{"w":200, "h":100, "img": "deepwater0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1400' y='1600' vars='{"w":400, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1900' y='1600' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='1700' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='waterSkin' type='waterSkin' x='100' y='1700' vars='{"w":700, "h":100, "img": "water0"}'></object>
+<object name='floorSkin' type='floorSkin' x='800' y='1700' vars='{"w":200, "h":100, "img": "grass0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1000' y='1700' vars='{"w":800, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1800' y='1700' vars='{"w":100, "h":100, "img": "grass0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1900' y='1700' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='1800' vars='{"w":2000, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='1900' vars='{"w":2000, "h":100, "img": "dirt0"}'></object>
+
+
+    <object name="charaIcon" type="charaIconFactory" x="10" y="10" z="Infinity" static="true" vars='{"names":["Essie", "Keystroke", "Essie Dummy" ]}'></object>
+
+  </level>-->
+
+
+  <level id="generatedLevel">
+    <object name="mystorage" type="storage" x="0" y="0" ></object>
+    <object name="camera" type="cam" x="0" y="0" vars='{"player":"Essie"}'></object>
+    <object name="keyboard" type="keyboard" x="0" y="0" ></object>
+    <object name="notificationManager" type="notificationManager" x="0" y="0" ></object>
+
+
+    <object name="someBG" type="bg1" x="0" y="0" ></object>
+    <object name="someBG" type="bg1sky" x="0" y="0" ></object>
+
+    <object name="Essie" type="Essie" x="200" y="800" vars='{"focus": true, "nextAlly":"Essie"}'></object>
+
+    <object name="someMouse" type="basicMouse" x="0" y="0" ></object>
+    <object name="someScore" type="score" x="600" y="50" ></object>
+    <object name="maxScore" type="maxscore" x="600" y="100" ></object>
+
+    <object name="floor" type="floor" x="3800" y="200" vars='{"w":500, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='2700' y='400' vars='{"w":300, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='2400' y='500' vars='{"w":300, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='2000' y='600' vars='{"w":500, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='4400' y='600' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+    <object name='deepWater' type='deepWater' x='4500' y='600' vars='{"w":700, "h":100, "img": "deepwater0"}'></object>
+    <object name='floor' type='floor' x='5200' y='600' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='4400' y='700' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+    <object name='deepWater' type='deepWater' x='4500' y='700' vars='{"w":700, "h":100, "img": "deepwater0"}'></object>
+    <object name='floor' type='floor' x='5200' y='700' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='4400' y='800' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+    <object name='deepWater' type='deepWater' x='4500' y='800' vars='{"w":700, "h":100, "img": "deepwater0"}'></object>
+    <object name='floor' type='floor' x='5200' y='800' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='4400' y='900' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+    <object name='deepWater' type='deepWater' x='4500' y='900' vars='{"w":700, "h":100, "img": "deepwater0"}'></object>
+    <object name='floor' type='floor' x='5200' y='900' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='4400' y='1000' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+    <object name='deepWater' type='deepWater' x='4500' y='1000' vars='{"w":700, "h":100, "img": "deepwater0"}'></object>
+    <object name='floor' type='floor' x='5200' y='1000' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='3500' y='1100' vars='{"w":300, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='4400' y='1100' vars='{"w":300, "h":100, "img": "dirt0"}'></object>
+    <object name='deepWater' type='deepWater' x='4700' y='1100' vars='{"w":300, "h":100, "img": "deepwater0"}'></object>
+    <object name='floor' type='floor' x='5000' y='1100' vars='{"w":300, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='4600' y='1200' vars='{"w":500, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='2600' y='1400' vars='{"w":300, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='2000' y='1700' vars='{"w":300, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='700' y='1800' vars='{"w":200, "h":100, "img": "grass0"}'></object>
+    <object name='floor' type='floor' x='1900' y='1800' vars='{"w":500, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='3200' y='1800' vars='{"w":300, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='5100' y='1800' vars='{"w":600, "h":100, "img": "grass0"}'></object>
+    <object name='floor' type='floor' x='200' y='1900' vars='{"w":500, "h":100, "img": "grass0"}'></object>
+    <object name='floor' type='floor' x='700' y='1900' vars='{"w":200, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='900' y='1900' vars='{"w":400, "h":100, "img": "grass0"}'></object>
+    <object name='floor' type='floor' x='1800' y='1900' vars='{"w":700, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='4400' y='1900' vars='{"w":700, "h":100, "img": "grass0"}'></object>
+    <object name='floor' type='floor' x='5100' y='1900' vars='{"w":600, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='0' y='2000' vars='{"w":200, "h":100, "img": "grass0"}'></object>
+    <object name='floor' type='floor' x='200' y='2000' vars='{"w":1100, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='1300' y='2000' vars='{"w":500, "h":100, "img": "grass0"}'></object>
+    <object name='floor' type='floor' x='1800' y='2000' vars='{"w":700, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='2500' y='2000' vars='{"w":300, "h":100, "img": "grass0"}'></object>
+    <object name='water' type='water' x='2800' y='2000' vars='{"w":200, "h":100, "img": "water0"}'></object>
+    <object name='floor' type='floor' x='3000' y='2000' vars='{"w":800, "h":100, "img": "grass0"}'></object>
+    <object name='water' type='water' x='3800' y='2000' vars='{"w":400, "h":100, "img": "water0"}'></object>
+    <object name='floor' type='floor' x='4200' y='2000' vars='{"w":200, "h":100, "img": "grass0"}'></object>
+    <object name='floor' type='floor' x='4400' y='2000' vars='{"w":1300, "h":100, "img": "dirt0"}'></object>
+    <object name='floor' type='floor' x='0' y='2100' vars='{"w":5700, "h":100, "img": "dirt0"}'></object>
+    
+    <!--<object name='floorSkin' type='floorSkin' x='3800' y='200' vars='{"w":500, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='2700' y='400' vars='{"w":300, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='2400' y='500' vars='{"w":300, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='2000' y='600' vars='{"w":500, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='4400' y='600' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='deepWaterSkin' type='deepWaterSkin' x='4500' y='600' vars='{"w":700, "h":100, "img": "deepwater0"}'></object>
+<object name='floorSkin' type='floorSkin' x='5200' y='600' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='4400' y='700' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='deepWaterSkin' type='deepWaterSkin' x='4500' y='700' vars='{"w":700, "h":100, "img": "deepwater0"}'></object>
+<object name='floorSkin' type='floorSkin' x='5200' y='700' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='4400' y='800' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='deepWaterSkin' type='deepWaterSkin' x='4500' y='800' vars='{"w":700, "h":100, "img": "deepwater0"}'></object>
+<object name='floorSkin' type='floorSkin' x='5200' y='800' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='4400' y='900' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='deepWaterSkin' type='deepWaterSkin' x='4500' y='900' vars='{"w":700, "h":100, "img": "deepwater0"}'></object>
+<object name='floorSkin' type='floorSkin' x='5200' y='900' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='4400' y='1000' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='deepWaterSkin' type='deepWaterSkin' x='4500' y='1000' vars='{"w":700, "h":100, "img": "deepwater0"}'></object>
+<object name='floorSkin' type='floorSkin' x='5200' y='1000' vars='{"w":100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='3500' y='1100' vars='{"w":300, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='4400' y='1100' vars='{"w":300, "h":100, "img": "dirt0"}'></object>
+<object name='deepWaterSkin' type='deepWaterSkin' x='4700' y='1100' vars='{"w":300, "h":100, "img": "deepwater0"}'></object>
+<object name='floorSkin' type='floorSkin' x='5000' y='1100' vars='{"w":300, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='4600' y='1200' vars='{"w":500, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='2600' y='1400' vars='{"w":300, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='2000' y='1700' vars='{"w":300, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='700' y='1800' vars='{"w":200, "h":100, "img": "grass0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1900' y='1800' vars='{"w":500, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='3200' y='1800' vars='{"w":300, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='5100' y='1800' vars='{"w":600, "h":100, "img": "grass0"}'></object>
+<object name='floorSkin' type='floorSkin' x='200' y='1900' vars='{"w":500, "h":100, "img": "grass0"}'></object>
+<object name='floorSkin' type='floorSkin' x='700' y='1900' vars='{"w":200, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='900' y='1900' vars='{"w":400, "h":100, "img": "grass0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1800' y='1900' vars='{"w":700, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='4400' y='1900' vars='{"w":700, "h":100, "img": "grass0"}'></object>
+<object name='floorSkin' type='floorSkin' x='5100' y='1900' vars='{"w":600, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='2000' vars='{"w":200, "h":100, "img": "grass0"}'></object>
+<object name='floorSkin' type='floorSkin' x='200' y='2000' vars='{"w":1100, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1300' y='2000' vars='{"w":500, "h":100, "img": "grass0"}'></object>
+<object name='floorSkin' type='floorSkin' x='1800' y='2000' vars='{"w":700, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='2500' y='2000' vars='{"w":300, "h":100, "img": "grass0"}'></object>
+<object name='waterSkin' type='waterSkin' x='2800' y='2000' vars='{"w":200, "h":100, "img": "water0"}'></object>
+<object name='floorSkin' type='floorSkin' x='3000' y='2000' vars='{"w":800, "h":100, "img": "grass0"}'></object>
+<object name='waterSkin' type='waterSkin' x='3800' y='2000' vars='{"w":400, "h":100, "img": "water0"}'></object>
+<object name='floorSkin' type='floorSkin' x='4200' y='2000' vars='{"w":200, "h":100, "img": "grass0"}'></object>
+<object name='floorSkin' type='floorSkin' x='4400' y='2000' vars='{"w":1300, "h":100, "img": "dirt0"}'></object>
+<object name='floorSkin' type='floorSkin' x='0' y='2100' vars='{"w":5700, "h":100, "img": "dirt0"}'></object>
+
+-->
+
+
+    <object name="wall" type="wall" x="0" y="0" vars='{"w":100, "h":2160, "img": "dirt0"}' ></object>
+    <object name="wall" type="wall" x="5660" y="0" vars='{"w":100, "h":2160, "img": "dirt0"}' ></object>
+
+
+    <object name="charaIcon" type="charaIconFactory" x="10" y="10" static="true" vars='{"names":["Essie" ]}'></object>
+
+    <object name="dayNightCycle" type="dayNightCycle" x="600" y="100" vars='{"starsImg": "bg1stars"}'></object>
+    <object name="weather" type="weather" x="600" y="100" static="true"></object>
+
+
+  </level>
+  <level id="game">
+    <object name="mystorage" type="storage" x="0" y="0" ></object>
+    <object name="camera" type="cam" x="0" y="0" vars='{"player":"Essie"}'></object>
+    <object name="keyboard" type="keyboard" x="0" y="0" ></object>
+    <object name="notificationManager" type="notificationManager" x="0" y="0" ></object>
+
+
+    <object name="someBG" type="bg1" x="0" y="0" ></object>
+
+    <object name="Essie" type="Essie" x="200" y="800" vars='{"focus": true, "nextAlly":"Keystroke"}'></object>
+    <object name="Keystroke" type="Key" x="1500" y="200" vars='{"focus": false, "nextAlly":"Essie"}'></object>
+    <object name="EssieDummy" type="dummy" x="500" y="200" vars='{"focus": false}'></object>
+
+    <object name="someMouse" type="basicMouse" x="0" y="0" ></object>
+    <object name="someScore" type="score" x="600" y="50" ></object>
+    <object name="maxScore" type="maxscore" x="600" y="100" ></object>
+
+    <object name="floor" type="floor" x="0" y="2100" vars='{"w":5760, "h":80, "img": "dirt0"}' ></object>
+    <object name="floor" type="floor" x="1000" y="1900" vars='{"w":200, "h":80, "img": "dirt0"}' ></object>
+    <object name="floor" type="floor" x="1200" y="1700" vars='{"w":500, "h":80, "img": "dirt0"}' ></object>
+    <object name="floor" type="floor" x="1700" y="1500" vars='{"w":500, "h":80, "img": "dirt0"}' ></object>
+    <object name="floor" type="floor" x="2000" y="600" vars='{"w":500, "h":80, "img": "dirt0"}' ></object>
+
+    <object name="wall" type="wall" x="0" y="0" vars='{"w":100, "h":2160, "img": "dirt0"}' ></object>
+    <object name="wall" type="wall" x="5660" y="0" vars='{"w":100, "h":2160, "img": "dirt0"}' ></object>
+
+
+    <object name="charaIcon" type="charaIconFactory" x="10" y="10" z="Infinity" static="true" vars='{"names":["Essie", "Keystroke", "Essie Dummy" ]}'></object>
+
+
+  </level>
+</levels>
