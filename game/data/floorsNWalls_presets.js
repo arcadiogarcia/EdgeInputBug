@@ -19,7 +19,7 @@ game_presets = game_presets.concat([
 {
     name: "floor",
     inherits: "hitbox",
-    //sprite: "debugRect",
+    sprite: "debugRect",
     vars: [{ name: "isSolid", value: true }],
     events: [
         {

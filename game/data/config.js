@@ -1,5 +1,5 @@
 ﻿var CLOCKWORKCONFIG = {
-    enginefps: 60,
+    enginefps: 30,
     animationfps: 60,
     appbar_buttonBackgroundColor: "gold",
     appbar_buttonForegroundColor: "black",
